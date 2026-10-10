@@ -1,0 +1,33 @@
+MUEBLES - DECORACIÓN · Página web
+=================================
+
+CÓMO VERLA
+  Doble clic en index.html. Se abre en tu navegador.
+  (Si la recibiste en .zip, descomprímela primero.)
+
+CÓMO EDITARLA
+  Abre esta carpeta completa en Visual Studio Code (Archivo > Abrir carpeta).
+
+ESTRUCTURA
+  index.html         Inicio
+  trabajos.html      Nuestros trabajos (galería con filtros)
+  presupuesto.html   Pida presupuesto
+  css/estilos.css    Apariencia. Los colores están al inicio del archivo.
+  js/script.js       Comportamiento. Los datos de contacto están al inicio.
+  img/               Fotos, una carpeta por categoría.
+  video/             Videos ordenados por categoría. Todavía NO se usan en la página.
+
+PENDIENTES (datos de relleno)
+  En js/script.js, al inicio del archivo:
+    instagram: ""                      <- escribe el usuario sin arroba
+    telefono:  "55 0000 0000"          <- número real
+    correo:    "contacto@ejemplo.com"  <- correo real
+  Al guardar, se actualizan en las tres páginas.
+
+AGREGAR UNA FOTO
+  1. Guarda la foto en la carpeta de su categoría dentro de img/
+     (nombre en minúsculas, sin espacios ni acentos).
+  2. En trabajos.html copia un bloque <a class="trabajo"> y cambia la ruta y el texto.
+
+SUBIRLA A INTERNET
+  Esta carpeta se sube tal cual a GitHub Pages, Netlify o Cloudflare Pages.

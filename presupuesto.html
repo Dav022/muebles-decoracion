@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pida presupuesto | Muebles - Decoración</title>
+  <meta name="description" content="Pide tu presupuesto sin compromiso por Instagram. Carpintería a medida en la Ciudad de México y el Estado de México.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <!-- ===== Encabezado (igual en las tres páginas) ===== -->
+  <p class="zona"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Trabajamos en Polanco y zonas residenciales de la Ciudad de México y el Estado de México</p>
+
+  <header class="cabecera">
+    <div class="contenedor cabecera__fila">
+      <a class="marca" href="index.html">
+        <span class="marca__nombre">Muebles<span class="marca__guion">-</span>Decoración</span>
+        <span class="marca__lema">Carpintería a medida</span>
+      </a>
+
+      <!-- Los datos de contacto se cambian en js/script.js -->
+      <ul class="contacto">
+        <li>
+          <a class="contacto__dato" data-enlace="instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="0.6" fill="currentColor"/></svg>
+            <span><span class="contacto__titulo">Instagram</span><span class="contacto__valor" data-contacto="instagram">Próximamente</span></span>
+          </a>
+        </li>
+        <li>
+          <a class="contacto__dato" href="tel:5500000000" data-enlace="telefono">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+            <span><span class="contacto__titulo">Llámanos</span><span class="contacto__valor" data-contacto="telefono">55 0000 0000</span></span>
+          </a>
+        </li>
+        <li>
+          <a class="contacto__dato" href="mailto:contacto@ejemplo.com" data-enlace="correo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            <span><span class="contacto__titulo">Escríbenos</span><span class="contacto__valor" data-contacto="correo">contacto@ejemplo.com</span></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <nav class="menu" aria-label="Secciones del sitio">
+      <div class="contenedor">
+        <ul class="menu__lista">
+          <li><a class="menu__enlace" href="index.html">Inicio</a></li>
+          <li><a class="menu__enlace" href="trabajos.html">Nuestros trabajos</a></li>
+          <li><a class="menu__enlace" href="presupuesto.html" aria-current="page">Pida presupuesto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="titulo-pagina">
+      <div class="contenedor">
+        <h1>Pide tu presupuesto sin compromiso</h1>
+        <p>Mándanos un mensaje y platicamos tu proyecto.</p>
+      </div>
+    </div>
+
+    <div class="contenedor presupuesto">
+      <div>
+        <h2 class="seccion__titulo">Así de sencillo</h2>
+        <ol class="pasos">
+          <li><strong>Escríbenos por Instagram</strong>Mándanos un mensaje directo a nuestra cuenta.</li>
+          <li><strong>Cuéntanos tu idea</strong>Dinos qué mueble o espacio tienes en mente. Si tienes medidas aproximadas, fotos del lugar o alguna referencia, mejor.</li>
+          <li><strong>Recibe tu presupuesto</strong>Te respondemos con una propuesta y su costo, sin compromiso.</li>
+        </ol>
+
+        <!-- Cuando exista la cuenta, escribe el usuario en js/script.js
+             y este bloque se convierte en un botón que abre el chat. -->
+        <a class="instagram" data-enlace="instagram-mensaje">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="0.6" fill="currentColor"/></svg>
+          <span>
+            <span class="instagram__titulo">Instagram</span>
+            <span class="instagram__usuario" data-contacto="instagram">Cuenta disponible próximamente</span>
+            <span class="boton" data-instagram-boton>Muy pronto</span>
+          </span>
+        </a>
+
+        <p class="otros-medios">
+          También puedes llamarnos al
+          <a href="tel:5500000000" data-enlace="telefono"><span data-contacto="telefono">55 0000 0000</span></a>
+          o escribirnos a
+          <a href="mailto:contacto@ejemplo.com" data-enlace="correo"><span data-contacto="correo">contacto@ejemplo.com</span></a>.
+        </p>
+        <p class="otros-medios">Trabajamos en Polanco y zonas residenciales de la Ciudad de México y el Estado de México.</p>
+      </div>
+
+      <img class="presupuesto__foto" src="img/closets-y-muebles/vestidor-01.jpg" alt="Vestidor de madera hecho a medida" width="1200" height="1600">
+    </div>
+  </main>
+
+  <!-- ===== Pie de página (igual en las tres páginas) ===== -->
+  <footer class="pie">
+    <div class="contenedor pie__fila">
+      <div>
+        <p class="pie__marca">Muebles - Decoración</p>
+        <p>Carpintería a medida</p>
+      </div>
+      <div>
+        <p>Polanco y zonas residenciales de la Ciudad de México y el Estado de México</p>
+        <p>
+          Instagram: <a data-enlace="instagram"><span data-contacto="instagram">Próximamente</span></a> ·
+          Tel. <a href="tel:5500000000" data-enlace="telefono"><span data-contacto="telefono">55 0000 0000</span></a> ·
+          <a href="mailto:contacto@ejemplo.com" data-enlace="correo"><span data-contacto="correo">contacto@ejemplo.com</span></a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
