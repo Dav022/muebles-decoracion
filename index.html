@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Muebles - Decoración | Carpintería a medida en CDMX y Estado de México</title>
+  <title>Muebles - Decoración e Interiorismo | Damos forma a tus ideas</title>
   <meta name="description" content="Cocinas, clósets, recepciones, muros de madera y decoración hechos a medida. Trabajamos en Polanco y zonas residenciales de la Ciudad de México y el Estado de México.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
@@ -17,8 +17,8 @@
   <header class="cabecera">
     <div class="contenedor cabecera__fila">
       <a class="marca" href="index.html">
-        <span class="marca__nombre">Muebles<span class="marca__guion">-</span>Decoración</span>
-        <span class="marca__lema">Carpintería a medida</span>
+        <span class="marca__nombre">Muebles - Decoración<br>e Interiorismo</span>
+        <span class="marca__lema">Damos forma a tus ideas</span>
       </a>
 
       <!-- Los datos de contacto se cambian en js/script.js -->
@@ -60,6 +60,7 @@
     <section class="portada" aria-label="Portada">
       <img class="portada__foto activa" src="img/closets-y-muebles/cava-01.jpg" alt="Cava de vinos en madera con iluminación" width="1600" height="1200">
       <img class="portada__foto" src="img/cocinas/cocina-12.jpg" alt="Cocina con barra de madera" width="1280" height="720">
+      <img class="portada__foto" src="img/exteriores/deck-01.jpg" alt="Deck de madera en jardín" width="1600" height="720">
 
       <div class="contenedor portada__texto">
         <h1>¿Tienes una idea para tu espacio?</h1>
@@ -73,8 +74,14 @@
       <button class="portada__flecha portada__flecha--ant" type="button" aria-label="Foto anterior">&#8249;</button>
       <button class="portada__flecha portada__flecha--sig" type="button" aria-label="Foto siguiente">&#8250;</button>
       <div class="portada__puntos">
-        <button class="portada__punto" type="button" aria-label="Ver foto 1" aria-current="true"></button>
-        <button class="portada__punto" type="button" aria-label="Ver foto 2" aria-current="false"></button>
+        <button class="portada__punto" type="button" data-foto="0" aria-label="Ver foto 1" aria-current="true"></button>
+        <button class="portada__punto" type="button" data-foto="1" aria-label="Ver foto 2" aria-current="false"></button>
+        <button class="portada__punto" type="button" data-foto="2" aria-label="Ver foto 3" aria-current="false"></button>
+      </div>
+      <div class="portada__minis">
+        <button class="portada__mini" type="button" data-foto="0" aria-label="Ver cava" aria-current="true"><img src="img/closets-y-muebles/cava-01.jpg" alt=""></button>
+        <button class="portada__mini" type="button" data-foto="1" aria-label="Ver cocina" aria-current="false"><img src="img/cocinas/cocina-12.jpg" alt=""></button>
+        <button class="portada__mini" type="button" data-foto="2" aria-label="Ver deck" aria-current="false"><img src="img/exteriores/deck-01.jpg" alt=""></button>
       </div>
     </section>
 
@@ -156,8 +163,8 @@
   <footer class="pie">
     <div class="contenedor pie__fila">
       <div>
-        <p class="pie__marca">Muebles - Decoración</p>
-        <p>Carpintería a medida</p>
+        <p class="pie__marca">Muebles - Decoración e Interiorismo</p>
+        <p>Damos forma a tus ideas</p>
       </div>
       <div>
         <p>Polanco y zonas residenciales de la Ciudad de México y el Estado de México</p>

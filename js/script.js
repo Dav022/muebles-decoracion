@@ -62,7 +62,7 @@ function iniciarPortada() {
   if (!portada) return;
 
   const fotos = portada.querySelectorAll(".portada__foto");
-  const puntos = portada.querySelectorAll(".portada__punto");
+  const puntos = portada.querySelectorAll("[data-foto]");
   const SEGUNDOS = 6;
   let actual = 0;
   let reloj = null;
@@ -70,7 +70,7 @@ function iniciarPortada() {
   function mostrar(indice) {
     actual = (indice + fotos.length) % fotos.length;
     fotos.forEach((foto, i) => foto.classList.toggle("activa", i === actual));
-    puntos.forEach((punto, i) => punto.setAttribute("aria-current", i === actual ? "true" : "false"));
+    puntos.forEach((punto) => punto.setAttribute("aria-current", Number(punto.dataset.foto) === actual ? "true" : "false"));
   }
 
   function arrancar() {
@@ -92,9 +92,9 @@ function iniciarPortada() {
     mostrar(actual + 1);
     arrancar();
   });
-  puntos.forEach((punto, i) =>
+  puntos.forEach((punto) =>
     punto.addEventListener("click", () => {
-      mostrar(i);
+      mostrar(Number(punto.dataset.foto));
       arrancar();
     })
   );
